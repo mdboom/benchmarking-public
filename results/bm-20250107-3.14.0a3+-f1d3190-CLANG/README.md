@@ -44,8 +44,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.092x faster (HPT: reliability of 100.00%, 1.07x faster at 99th %ile)
-- Memory usage: 1.00x
 - [🧠memory plot](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base-mem.svg)
 - [📄table](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.md)
 - [📈time plot](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.svg)
@@ -85,8 +83,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.074x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
-- Memory usage: 1.00x
 - [🧠memory plot](bm-20250107-linux-x86_64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base-mem.svg)
 - [📄table](bm-20250107-linux-x86_64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.md)
 - [📈time plot](bm-20250107-linux-x86_64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.svg)
@@ -126,8 +122,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.108x faster (HPT: reliability of 100.00%, 1.06x faster at 99th %ile)
-- Memory usage: unknown
 - [📄table](bm-20250107-pythonperf1-amd64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.md)
 - [📈time plot](bm-20250107-pythonperf1-amd64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.svg)
 
@@ -166,8 +160,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.144x slower (HPT: reliability of 100.00%, 1.12x slower at 99th %ile)
-- Memory usage: unknown
 - [📄table](bm-20250107-pythonperf1_win32-x86-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.md)
 - [📈time plot](bm-20250107-pythonperf1_win32-x86-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.svg)
 
@@ -205,8 +197,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.147x faster (HPT: reliability of 100.00%, 1.10x faster at 99th %ile)
-- Memory usage: 1.00x
 - [🧠memory plot](bm-20250107-darwin-arm64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base-mem.svg)
 - [📄table](bm-20250107-darwin-arm64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.md)
 - [📈time plot](bm-20250107-darwin-arm64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.svg)
