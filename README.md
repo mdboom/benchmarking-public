@@ -111,6 +111,7 @@ The available parameters are:
 - `benchmark_base`: If checked, the base of the selected branch will also be benchmarked.
   The base is determined by running `git merge-base upstream/main $ref`.
 - `pystats`: If checked, collect the pystats from running the benchmarks.
+- A choice of configurations (documented below).
 
 To watch the progress of the benchmark, select it from the 🔒 [benchmark action page](../../actions/workflows/benchmark.yml).
 It may be canceled from there as well.
@@ -141,6 +142,10 @@ Any of the parameters described above are available at the commandline using the
 ### Collecting Linux perf profiling data
 
 To collect Linux perf sampling profile data for a benchmarking run, run the `_benchmark` action and check the `perf` checkbox.
+
+The results will be available as "artifacts" on the run page after the run -- they are not committed directly to the repository.
+
+The `python -m bench_runner profiling_plot` command can be used to turn the raw perf results into tables and graphs.
 
 ### Creating a custom comparison
 
@@ -231,16 +236,19 @@ Here "configuration" may be a combination of both build-time and run-time flags:
   variable set at runtime to use the Tier 2 interpreter.
 - JIT: A JIT and PGO build of CPython (`./configure --enable-optimizations
 --with-lto=yes --enable-experimental-jit`).
+- Free-threading: Build a free-threaded build of CPython (`./configure --enable-free-threading`).
+- Tail-calling: Build with the latest Clang, and build Python with the tail-calling
+  interpreter (`./configure --with-tail-call`).
 
 Information about the configuration of the run is in the `README.md` at the root
 of each run directory. The directory name will also include `PYTHON_UOPS` for
-Tier 2 and `JIT` for JIT.
+Tier 2, `JIT` for JIT, `NOGIL` for free-threading and `CLANG` for tail calling.
 
 To reduce the number of unknown variables when comparing results, runs are
 always compared against runs of the same configuration. Be aware that sometimes
 the base commit on main may predate the configuration becoming available, for
-example, before the JIT compiler was merged into main. (An exception to this
-rule are the weekly benchmarks of upstream main, there Tier 2 and JIT
+example, before the JIT compiler was merged into main. (Exception to this
+rule are the weekly benchmarks of upstream main, there Tier 2, JIT, NOGIL and CLANG
 configurations are compared against default configurations of the same commit,
 but that isn't relevant for the common case of testing a pull request).
 
@@ -266,16 +274,16 @@ tune`](https://pyperf.readthedocs.io/en/latest/system.html) to set CPU
   other things about the system are still stabilizing. These runs are excluded
   from the timing results. This is generally effective at reducing variability,
   but also may exclude real work done during optimization, for example.
-- We also use the Hierarchical Performance Testing (HPT) method (see below) to
-  statistically reduce the effect of benchmarks that have more variability. This
-  is a different method than the simple geometric mean that `pyperf` uses by
-  default. We provide both numbers in our results.
 
 #### pystats
 
 `pystats` are a set of counters in CPython that measure things like the number
 of times each bytecode instruction is executed. (Detailed documentation of all
 of the counters should be added to CPython in the future).
+
+Checking the `pystats` box will generate pystats results automatically.
+
+##### Collecting pystats locally
 
 Collecting `pystats` requires a special build of CPython with `pystats` enabled:
 (`./configure --enable-pystats`).
