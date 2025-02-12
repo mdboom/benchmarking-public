@@ -8,6 +8,40 @@
 - commit merge base: [5ce70ad129d2e34a09f8ae6ee0542f4f996fb8ec](https://github.com/python/cpython/commit/5ce70ad129d2e34a09f8ae6ee0542f4f996fb8ec)
 - ref: c1f352bf0813803bb795
 
+## linux aarch64 (arminc)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13286286073)
+- cpu model: missing
+- platform: Linux-5.15.0-101-generic-aarch64-with-glibc2.35
+- [raw results](bm-20250208-arminc-aarch64-python-c1f352bf0813803bb795-3.14.0a4%2B-c1f352b.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.330x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
+- Memory usage: 1.30x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- [📄table](bm-20250208-arminc-aarch64-python-c1f352bf0813803bb795-3.14.0a4%2B-c1f352b-vs-3.10.4.md)
+- [📈time plot](bm-20250208-arminc-aarch64-python-c1f352bf0813803bb795-3.14.0a4%2B-c1f352b-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.045x faster (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
+- Memory usage: 1.05x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpickle, unpickle_list
+- new benchmarks: bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- [📄table](bm-20250208-arminc-aarch64-python-c1f352bf0813803bb795-3.14.0a4%2B-c1f352b-vs-3.12.0.md)
+- [📈time plot](bm-20250208-arminc-aarch64-python-c1f352bf0813803bb795-3.14.0a4%2B-c1f352b-vs-3.12.0.svg)
+
+### vs. 3.13.0
+
+- Geometric mean: 1.041x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
+- Memory usage: 1.03x
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
+- new benchmarks: dulwich_log
+- [📄table](bm-20250208-arminc-aarch64-python-c1f352bf0813803bb795-3.14.0a4%2B-c1f352b-vs-3.13.0.md)
+- [📈time plot](bm-20250208-arminc-aarch64-python-c1f352bf0813803bb795-3.14.0a4%2B-c1f352b-vs-3.13.0.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13286281600)

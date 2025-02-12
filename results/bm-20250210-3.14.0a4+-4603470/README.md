@@ -42,6 +42,14 @@
 - [📄table](bm-20250210-arminc-aarch64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-3.13.0.md)
 - [📈time plot](bm-20250210-arminc-aarch64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.001x slower (HPT: reliability of 99.64%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250210-arminc-aarch64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-base-mem.svg)
+- [📄table](bm-20250210-arminc-aarch64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-base.md)
+- [📈time plot](bm-20250210-arminc-aarch64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-base.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13286281600)
