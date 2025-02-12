@@ -91,3 +91,43 @@
 - [📄table](bm-20250210-linux-x86_64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-base.md)
 - [📈time plot](bm-20250210-linux-x86_64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-base.svg)
 
+## darwin arm64 (darwin)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13290078422)
+- cpu model: missing
+- platform: macOS-15.3-arm64-arm-64bit-Mach-O
+- [raw results](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.391x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
+- Memory usage: 1.14x
+- missing benchmarks: chameleon, djangocms, gevent_hub, tornado_http
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io_tg, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
+- [📄table](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-3.10.4.md)
+- [📈time plot](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.091x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
+- Memory usage: 1.12x
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
+- [📄table](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-3.12.0.md)
+- [📈time plot](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-3.12.0.svg)
+
+### vs. 3.13.0
+
+- Geometric mean: 1.095x faster (HPT: reliability of 100.00%, 1.06x faster at 99th %ile)
+- Memory usage: 1.08x
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
+- [📄table](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-3.13.0.md)
+- [📈time plot](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.001x faster (HPT: reliability of 99.81%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-base-mem.svg)
+- [📄table](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-base.md)
+- [📈time plot](bm-20250210-darwin-arm64-nelhage-computed_goto_nomerg-3.14.0a4%2B-4603470-vs-base.svg)
+
