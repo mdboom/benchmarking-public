@@ -73,3 +73,11 @@
 - [📄table](bm-20250213-darwin-arm64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-3.13.0.md)
 - [📈time plot](bm-20250213-darwin-arm64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x faster (HPT: reliability of 99.96%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250213-darwin-arm64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-base-mem.svg)
+- [📄table](bm-20250213-darwin-arm64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-base.md)
+- [📈time plot](bm-20250213-darwin-arm64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-base.svg)
+
