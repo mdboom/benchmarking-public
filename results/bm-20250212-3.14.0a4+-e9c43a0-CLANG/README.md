@@ -41,6 +41,14 @@
 - [📄table](bm-20250212-linux-x86_64-mdboom-early_tail_call_load-3.14.0a4%2B-e9c43a0-vs-3.13.0.md)
 - [📈time plot](bm-20250212-linux-x86_64-mdboom-early_tail_call_load-3.14.0a4%2B-e9c43a0-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.008x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250212-linux-x86_64-mdboom-early_tail_call_load-3.14.0a4%2B-e9c43a0-vs-base-mem.svg)
+- [📄table](bm-20250212-linux-x86_64-mdboom-early_tail_call_load-3.14.0a4%2B-e9c43a0-vs-base.md)
+- [📈time plot](bm-20250212-linux-x86_64-mdboom-early_tail_call_load-3.14.0a4%2B-e9c43a0-vs-base.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13313006911)
