@@ -41,6 +41,14 @@
 - [📄table](bm-20250213-linux-x86_64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-3.13.0.md)
 - [📈time plot](bm-20250213-linux-x86_64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.001x slower (HPT: reliability of 97.99%, 1.00x slower at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250213-linux-x86_64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-base-mem.svg)
+- [📄table](bm-20250213-linux-x86_64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-base.md)
+- [📈time plot](bm-20250213-linux-x86_64-Fidget%252dSpinner-grand_unified_tailca-3.14.0a5%2B-d07479b-vs-base.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13309151630)
