@@ -41,6 +41,14 @@
 - [📄table](bm-20250220-pythonperf2-x86_64-faster%252dcpython-use_stackrefs-3.14.0a5%2B-d270553-vs-3.13.0.md)
 - [📈time plot](bm-20250220-pythonperf2-x86_64-faster%252dcpython-use_stackrefs-3.14.0a5%2B-d270553-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.005x slower (HPT: reliability of 99.66%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250220-pythonperf2-x86_64-faster%252dcpython-use_stackrefs-3.14.0a5%2B-d270553-vs-base-mem.svg)
+- [📄table](bm-20250220-pythonperf2-x86_64-faster%252dcpython-use_stackrefs-3.14.0a5%2B-d270553-vs-base.md)
+- [📈time plot](bm-20250220-pythonperf2-x86_64-faster%252dcpython-use_stackrefs-3.14.0a5%2B-d270553-vs-base.svg)
+
 ## windows amd64 (pythonperf1)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13441581388)
