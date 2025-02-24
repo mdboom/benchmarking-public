@@ -259,10 +259,11 @@
 <use x="677.677337" y="266.754882" xlink:href="#d"/>
 </g>
 <g stroke="#d62728" stroke-opacity=".9">
-<path d="m669 133 8.4 9.02" clip-path="url(#h)" fill="none" stroke-dasharray="1.5,2.475" stroke-width="1.5"/>
+<path d="m669 133 8.4 9.02 8.58 27.9" clip-path="url(#h)" fill="none" stroke-dasharray="1.5,2.475" stroke-width="1.5"/>
 <g clip-path="url(#h)" fill="#d62728" fill-opacity=".9">
 <use x="669.275966" y="133.169108" xlink:href="#d"/>
 <use x="677.677337" y="142.189529" xlink:href="#d"/>
+<use x="686.256387" y="170.062555" xlink:href="#d"/>
 </g>
 </g>
 <path d="m40.6 351v-316" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8"/>
