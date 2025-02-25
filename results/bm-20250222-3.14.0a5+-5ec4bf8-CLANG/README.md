@@ -211,7 +211,7 @@
 
 ## darwin arm64 (darwin)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13477695822)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13525064046)
 - cpu model: missing
 - platform: macOS-15.3-arm64-arm-64bit-Mach-O
 - [raw results](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8.json)
@@ -221,7 +221,7 @@
 - Geometric mean: 1.473x faster (HPT: reliability of 100.00%, 1.29x faster at 99th %ile)
 - Memory usage: 1.12x
 - missing benchmarks: chameleon, djangocms, gevent_hub, tornado_http
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io_tg, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io_tg, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 - [📄table](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-3.10.4.md)
 - [📈time plot](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-3.10.4.svg)
 
@@ -230,7 +230,6 @@
 - Geometric mean: 1.156x faster (HPT: reliability of 100.00%, 1.09x faster at 99th %ile)
 - Memory usage: 1.08x
 - missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-3.12.0.md)
 - [📈time plot](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-3.12.0.svg)
 
@@ -239,7 +238,6 @@
 - Geometric mean: 1.160x faster (HPT: reliability of 100.00%, 1.11x faster at 99th %ile)
 - Memory usage: 1.08x
 - missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-3.13.0.md)
 - [📈time plot](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-3.13.0.svg)
 
@@ -247,6 +245,7 @@
 
 - Geometric mean: 1.170x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
 - Memory usage: 0.99x
+- missing benchmarks: 🔴 asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-base-mem.svg)
 - [📄table](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-base.md)
 - [📈time plot](bm-20250222-darwin-arm64-python-5ec4bf86b7f4455432ae-3.14.0a5%2B-5ec4bf8-vs-base.svg)
