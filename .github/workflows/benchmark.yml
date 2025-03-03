@@ -28,6 +28,7 @@ on:
         - linux-x86_64-pythonperf2
         - linux-aarch64-arminc
         - all
+        - __really_all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
         type: string

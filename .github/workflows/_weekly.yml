@@ -36,7 +36,7 @@ jobs:
     with:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
-      machine: all
+      machine: __really_all
       benchmarks: all_and_excluded
       pgo: true
       tier2: false
@@ -48,7 +48,7 @@ jobs:
     with:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
-      machine: all
+      machine: __really_all
       benchmarks: all_and_excluded
       pgo: true
       tier2: false
@@ -61,7 +61,7 @@ jobs:
     with:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
-      machine: all
+      machine: __really_all
       benchmarks: all_and_excluded
       pgo: true
       tier2: false
@@ -75,7 +75,7 @@ jobs:
     with:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
-      machine: all
+      machine: __really_all
       benchmarks: all_and_excluded
       pgo: true
       tier2: false

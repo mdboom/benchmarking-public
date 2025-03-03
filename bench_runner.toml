@@ -59,11 +59,13 @@ arch = "x86"
 hostname = "WIN-5FKPU9U7KDT"
 github_runner_name = "windows-x86_64-pythonperf1"
 env = { BUILD_FLAGS = "-p Win32", BUILD_DEST = "PCBuild/win32" }
+include_in_all = false
 
 [runners.pythonperf2]
 os = "linux"
 arch = "x86_64"
 hostname = "pythonperf2"
+include_in_all = false
 
 [runners.arminc]
 os = "linux"

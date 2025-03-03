@@ -209,7 +209,8 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
+    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == '__really_all'
+      || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
@@ -311,7 +312,8 @@ jobs:
         path: |
           benchmark.json
         overwrite: true
-    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 'all') }}
+    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == '__really_all'
+      || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
@@ -414,8 +416,8 @@ jobs:
           benchmark.json
         overwrite: true
 
-    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine == 'all')
-      }}
+    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine == '__really_all'
+      || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
@@ -520,7 +522,7 @@ jobs:
         overwrite: true
 
     if: ${{ (inputs.machine == 'windows-x86-pythonperf1_win32' || inputs.machine ==
-      'all') }}
+      '__really_all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
@@ -640,7 +642,7 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2' || inputs.machine == 'all')
+    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2' || inputs.machine == '__really_all')
       }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
@@ -761,8 +763,8 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-aarch64-arminc' || inputs.machine == 'all')
-      }}
+    if: ${{ (inputs.machine == 'linux-aarch64-arminc' || inputs.machine == '__really_all'
+      || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
