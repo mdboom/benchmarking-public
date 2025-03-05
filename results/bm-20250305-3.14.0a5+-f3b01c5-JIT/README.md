@@ -8,6 +8,15 @@
 - commit merge base: [813bc5694bd8aa43165468c5ea1dc27af973611d](https://github.com/python/cpython/commit/813bc5694bd8aa43165468c5ea1dc27af973611d)
 - ref: jit_warmup_aggressiv
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250305-azure-x86_64-brandtbucher-jit_warmup_aggressiv-3.14.0a5%2B-f3b01c5-pystats.json)
+- [pystats table](bm-20250305-azure-x86_64-brandtbucher-jit_warmup_aggressiv-3.14.0a5%2B-f3b01c5-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250305-azure-x86_64-brandtbucher-jit_warmup_aggressiv-3.14.0a5%2B-f3b01c5-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13683839486)
