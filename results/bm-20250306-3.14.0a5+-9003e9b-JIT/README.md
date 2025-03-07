@@ -8,6 +8,15 @@
 - commit merge base: [813bc5694bd8aa43165468c5ea1dc27af973611d](https://github.com/python/cpython/commit/813bc5694bd8aa43165468c5ea1dc27af973611d)
 - ref: jit_stitch_2048
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250306-azure-x86_64-brandtbucher-jit_stitch_2048-3.14.0a5%2B-9003e9b-pystats.json)
+- [pystats table](bm-20250306-azure-x86_64-brandtbucher-jit_stitch_2048-3.14.0a5%2B-9003e9b-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250306-azure-x86_64-brandtbucher-jit_stitch_2048-3.14.0a5%2B-9003e9b-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13709347450)
