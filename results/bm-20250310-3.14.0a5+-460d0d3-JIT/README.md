@@ -42,6 +42,14 @@
 - [📄table](bm-20250310-arminc-aarch64-diegorusso-remove_jumps_aarch64-3.14.0a5%2B-460d0d3-vs-3.13.0.md)
 - [📈time plot](bm-20250310-arminc-aarch64-diegorusso-remove_jumps_aarch64-3.14.0a5%2B-460d0d3-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.014x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250310-arminc-aarch64-diegorusso-remove_jumps_aarch64-3.14.0a5%2B-460d0d3-vs-base-mem.svg)
+- [📄table](bm-20250310-arminc-aarch64-diegorusso-remove_jumps_aarch64-3.14.0a5%2B-460d0d3-vs-base.md)
+- [📈time plot](bm-20250310-arminc-aarch64-diegorusso-remove_jumps_aarch64-3.14.0a5%2B-460d0d3-vs-base.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13771111380)
