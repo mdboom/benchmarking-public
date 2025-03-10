@@ -286,5 +286,8 @@
   "bm-20250308-3.14.0a5+-a3990df/bm-20250308-pythonperf2-x86_64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json,bm-20250308-3.14.0a5+-a3990df-JIT/bm-20250308-pythonperf2-x86_64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json": 1.01,
   "bm-20250308-3.14.0a5+-a3990df/bm-20250308-arminc-aarch64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json,bm-20250308-3.14.0a5+-a3990df-JIT/bm-20250308-arminc-aarch64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json": 1.01,
   "bm-20250308-3.14.0a5+-a3990df/bm-20250308-pythonperf1-amd64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json,bm-20250308-3.14.0a5+-a3990df-JIT/bm-20250308-pythonperf1-amd64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json": null,
-  "bm-20250308-3.14.0a5+-a3990df/bm-20250308-pythonperf1_win32-x86-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json,bm-20250308-3.14.0a5+-a3990df-JIT/bm-20250308-pythonperf1_win32-x86-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json": null
+  "bm-20250308-3.14.0a5+-a3990df/bm-20250308-pythonperf1_win32-x86-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json,bm-20250308-3.14.0a5+-a3990df-JIT/bm-20250308-pythonperf1_win32-x86-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json": null,
+  "bm-20250308-3.14.0a5+-a3990df/bm-20250308-arminc-aarch64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json,bm-20250308-3.14.0a5+-a3990df-CLANG/bm-20250308-arminc-aarch64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json": 1.03,
+  "bm-20250308-3.14.0a5+-a3990df/bm-20250308-pythonperf1-amd64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json,bm-20250308-3.14.0a5+-a3990df-CLANG/bm-20250308-pythonperf1-amd64-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json": null,
+  "bm-20250308-3.14.0a5+-a3990df/bm-20250308-pythonperf1_win32-x86-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json,bm-20250308-3.14.0a5+-a3990df-CLANG/bm-20250308-pythonperf1_win32-x86-python-a3990df6121880e8c678-3.14.0a5+-a3990df.json": null
 }
