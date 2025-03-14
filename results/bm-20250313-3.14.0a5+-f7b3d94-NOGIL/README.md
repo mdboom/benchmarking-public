@@ -42,3 +42,11 @@
 - [📄table](bm-20250313-linux-x86_64-kumaraditya303-fast_asyncio-3.14.0a5%2B-f7b3d94-vs-3.13.0.md)
 - [📈time plot](bm-20250313-linux-x86_64-kumaraditya303-fast_asyncio-3.14.0a5%2B-f7b3d94-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.007x faster (HPT: reliability of 99.16%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250313-linux-x86_64-kumaraditya303-fast_asyncio-3.14.0a5%2B-f7b3d94-vs-base-mem.svg)
+- [📄table](bm-20250313-linux-x86_64-kumaraditya303-fast_asyncio-3.14.0a5%2B-f7b3d94-vs-base.md)
+- [📈time plot](bm-20250313-linux-x86_64-kumaraditya303-fast_asyncio-3.14.0a5%2B-f7b3d94-vs-base.svg)
+
