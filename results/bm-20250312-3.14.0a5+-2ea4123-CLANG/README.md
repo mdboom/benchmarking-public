@@ -42,3 +42,11 @@
 - [📄table](bm-20250312-linux-x86_64-brandtbucher-msvc_musttail-3.14.0a5%2B-2ea4123-vs-3.13.0.md)
 - [📈time plot](bm-20250312-linux-x86_64-brandtbucher-msvc_musttail-3.14.0a5%2B-2ea4123-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.002x slower (HPT: reliability of 96.31%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250312-linux-x86_64-brandtbucher-msvc_musttail-3.14.0a5%2B-2ea4123-vs-base-mem.svg)
+- [📄table](bm-20250312-linux-x86_64-brandtbucher-msvc_musttail-3.14.0a5%2B-2ea4123-vs-base.md)
+- [📈time plot](bm-20250312-linux-x86_64-brandtbucher-msvc_musttail-3.14.0a5%2B-2ea4123-vs-base.svg)
+
