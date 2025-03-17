@@ -168,6 +168,13 @@
 - [📄table](bm-20250315-pythonperf1-amd64-python-e82c2ca2a59235bc1965-3.14.0a6%2B-e82c2ca-vs-3.13.0.md)
 - [📈time plot](bm-20250315-pythonperf1-amd64-python-e82c2ca2a59235bc1965-3.14.0a6%2B-e82c2ca-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.148x faster (HPT: reliability of 100.00%, 1.11x faster at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250315-pythonperf1-amd64-python-e82c2ca2a59235bc1965-3.14.0a6%2B-e82c2ca-vs-base.md)
+- [📈time plot](bm-20250315-pythonperf1-amd64-python-e82c2ca2a59235bc1965-3.14.0a6%2B-e82c2ca-vs-base.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13877830682)
