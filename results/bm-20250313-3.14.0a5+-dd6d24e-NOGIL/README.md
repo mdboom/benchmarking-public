@@ -44,8 +44,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.107x slower (HPT: reliability of 100.00%, 1.10x slower at 99th %ile)
-- Memory usage: 1.19x
 - [🧠memory plot](bm-20250313-linux-x86_64-python-dd6d24e9d20407ea31a3-3.14.0a5%2B-dd6d24e-vs-base-mem.svg)
 - [📄table](bm-20250313-linux-x86_64-python-dd6d24e9d20407ea31a3-3.14.0a5%2B-dd6d24e-vs-base.md)
 - [📈time plot](bm-20250313-linux-x86_64-python-dd6d24e9d20407ea31a3-3.14.0a5%2B-dd6d24e-vs-base.svg)
