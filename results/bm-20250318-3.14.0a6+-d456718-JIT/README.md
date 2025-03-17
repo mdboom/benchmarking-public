@@ -47,3 +47,12 @@
 - [📄table](bm-20250318-linux-x86_64-Fidget%252dSpinner-method_jit_bench-3.14.0a6%2B-d456718-vs-3.13.0.md)
 - [📈time plot](bm-20250318-linux-x86_64-Fidget%252dSpinner-method_jit_bench-3.14.0a6%2B-d456718-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.011x slower (HPT: reliability of 88.40%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: 🔴 2to3
+- [🧠memory plot](bm-20250318-linux-x86_64-Fidget%252dSpinner-method_jit_bench-3.14.0a6%2B-d456718-vs-base-mem.svg)
+- [📄table](bm-20250318-linux-x86_64-Fidget%252dSpinner-method_jit_bench-3.14.0a6%2B-d456718-vs-base.md)
+- [📈time plot](bm-20250318-linux-x86_64-Fidget%252dSpinner-method_jit_bench-3.14.0a6%2B-d456718-vs-base.svg)
+
