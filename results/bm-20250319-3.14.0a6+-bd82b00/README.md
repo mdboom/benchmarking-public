@@ -44,8 +44,8 @@
 
 ### vs. base
 
-- Geometric mean: 1.852x faster (HPT: reliability of 84.13%, 1.00x faster at 99th %ile)
-- Memory usage: 1.00x
+- Geometric mean: 1.002x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.01x
 - [🧠memory plot](bm-20250319-pythonperf2-x86_64-mdboom-tuple_hash_cache-3.14.0a6%2B-bd82b00-vs-base-mem.svg)
 - [📄table](bm-20250319-pythonperf2-x86_64-mdboom-tuple_hash_cache-3.14.0a6%2B-bd82b00-vs-base.md)
 - [📈time plot](bm-20250319-pythonperf2-x86_64-mdboom-tuple_hash_cache-3.14.0a6%2B-bd82b00-vs-base.svg)
