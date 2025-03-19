@@ -42,6 +42,14 @@
 - [📄table](bm-20250319-arminc-aarch64-Fidget%252dSpinner-baseline_jit-3.14.0a6%2B-e55b89a-vs-3.13.0.md)
 - [📈time plot](bm-20250319-arminc-aarch64-Fidget%252dSpinner-baseline_jit-3.14.0a6%2B-e55b89a-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.009x faster (HPT: reliability of 99.77%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250319-arminc-aarch64-Fidget%252dSpinner-baseline_jit-3.14.0a6%2B-e55b89a-vs-base-mem.svg)
+- [📄table](bm-20250319-arminc-aarch64-Fidget%252dSpinner-baseline_jit-3.14.0a6%2B-e55b89a-vs-base.md)
+- [📈time plot](bm-20250319-arminc-aarch64-Fidget%252dSpinner-baseline_jit-3.14.0a6%2B-e55b89a-vs-base.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13950825369)
