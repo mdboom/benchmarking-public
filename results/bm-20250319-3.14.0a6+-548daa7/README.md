@@ -42,6 +42,14 @@
 - [📄table](bm-20250319-arminc-aarch64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-3.13.0.md)
 - [📈time plot](bm-20250319-arminc-aarch64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x faster (HPT: reliability of 95.84%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250319-arminc-aarch64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-base-mem.svg)
+- [📄table](bm-20250319-arminc-aarch64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-base.md)
+- [📈time plot](bm-20250319-arminc-aarch64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-base.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13948931188)
@@ -75,6 +83,14 @@
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250319-linux-x86_64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-3.13.0.md)
 - [📈time plot](bm-20250319-linux-x86_64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.003x slower (HPT: reliability of 90.40%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250319-linux-x86_64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-base-mem.svg)
+- [📄table](bm-20250319-linux-x86_64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-base.md)
+- [📈time plot](bm-20250319-linux-x86_64-zooba-gh_91349-3.14.0a6%2B-548daa7-vs-base.svg)
 
 ## windows amd64 (pythonperf1)
 
