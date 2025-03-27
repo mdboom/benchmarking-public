@@ -42,3 +42,11 @@
 - [📄table](bm-20250326-linux-x86_64-brandtbucher-keep_stack_pointer-3.14.0a6%2B-b3d84fd-vs-3.13.0.md)
 - [📈time plot](bm-20250326-linux-x86_64-brandtbucher-keep_stack_pointer-3.14.0a6%2B-b3d84fd-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.005x slower (HPT: reliability of 91.72%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250326-linux-x86_64-brandtbucher-keep_stack_pointer-3.14.0a6%2B-b3d84fd-vs-base-mem.svg)
+- [📄table](bm-20250326-linux-x86_64-brandtbucher-keep_stack_pointer-3.14.0a6%2B-b3d84fd-vs-base.md)
+- [📈time plot](bm-20250326-linux-x86_64-brandtbucher-keep_stack_pointer-3.14.0a6%2B-b3d84fd-vs-base.svg)
+
