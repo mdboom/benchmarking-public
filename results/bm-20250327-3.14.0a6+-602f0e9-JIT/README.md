@@ -8,6 +8,11 @@
 - commit merge base: [8a00c9a4d2ce9d373b13f8f0a2265a65f4523293](https://github.com/python/cpython/commit/8a00c9a4d2ce9d373b13f8f0a2265a65f4523293)
 - ref: jit_guard_float_int_
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250327-azure-x86_64-brandtbucher-jit_guard_float_int_-3.14.0a6%2B-602f0e9-pystats.json)
+- [pystats table](bm-20250327-azure-x86_64-brandtbucher-jit_guard_float_int_-3.14.0a6%2B-602f0e9-pystats.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14115125803)
