@@ -8,6 +8,11 @@
 - commit merge base: [52b5eb95b770fa00ebbd449ba40cab4a0e7c7df7](https://github.com/python/cpython/commit/52b5eb95b770fa00ebbd449ba40cab4a0e7c7df7)
 - ref: tuple
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250326-azure-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-pystats.json)
+- [pystats table](bm-20250326-azure-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-pystats.md)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14115511011)
@@ -41,4 +46,12 @@
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250326-pythonperf2-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-vs-3.13.0.md)
 - [📈time plot](bm-20250326-pythonperf2-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.002x slower (HPT: reliability of 58.18%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250326-pythonperf2-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-vs-base-mem.svg)
+- [📄table](bm-20250326-pythonperf2-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-vs-base.md)
+- [📈time plot](bm-20250326-pythonperf2-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-vs-base.svg)
 
