@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250326-azure-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-pystats.json)
 - [pystats table](bm-20250326-azure-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250326-azure-x86_64-iritkatriel-tuple-3.14.0a6%2B-50dd66b-pystats-vs-base.md)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14115511011)
