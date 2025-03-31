@@ -42,3 +42,11 @@
 - [📄table](bm-20250330-linux-x86_64-brandtbucher-unbox-3.14.0a6%2B-696d3fd-vs-3.13.0.md)
 - [📈time plot](bm-20250330-linux-x86_64-brandtbucher-unbox-3.14.0a6%2B-696d3fd-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.054x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
+- Memory usage: 2.09x
+- [🧠memory plot](bm-20250330-linux-x86_64-brandtbucher-unbox-3.14.0a6%2B-696d3fd-vs-base-mem.svg)
+- [📄table](bm-20250330-linux-x86_64-brandtbucher-unbox-3.14.0a6%2B-696d3fd-vs-base.md)
+- [📈time plot](bm-20250330-linux-x86_64-brandtbucher-unbox-3.14.0a6%2B-696d3fd-vs-base.svg)
+
