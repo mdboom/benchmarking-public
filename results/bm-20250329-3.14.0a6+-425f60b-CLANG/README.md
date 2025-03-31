@@ -172,7 +172,6 @@
 
 - Geometric mean: 1.166x faster (HPT: reliability of 100.00%, 1.12x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: 🔴 asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20250329-pythonperf1-amd64-python-425f60b9eb253c57bc32-3.14.0a6%2B-425f60b-vs-base.md)
 - [📈time plot](bm-20250329-pythonperf1-amd64-python-425f60b9eb253c57bc32-3.14.0a6%2B-425f60b-vs-base.svg)
 
