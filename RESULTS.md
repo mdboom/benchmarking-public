@@ -7,7 +7,7 @@ Each result column below is of the form:
 <!-- START table -->
 - [Most recent  pystats on main (425f60b)](results/bm-20250329-3.14.0a6%2B-425f60b/bm-20250329-azure-x86_64-python-425f60b9eb253c57bc32-3.14.0a6%2B-425f60b-pystats.md)
 - [Most recent PYTHON_UOPS pystats on main (425f60b)](results/bm-20250329-3.14.0a6%2B-425f60b-PYTHON_UOPS/bm-20250329-azure-x86_64-python-425f60b9eb253c57bc32-3.14.0a6%2B-425f60b-pystats.md)
-- [Most recent JIT pystats on main (8a00c9a)](results/bm-20250327-3.14.0a6%2B-8a00c9a-JIT/bm-20250327-azure-x86_64-python-8a00c9a4d2ce9d373b13-3.14.0a6%2B-8a00c9a-pystats.md)
+- [Most recent JIT pystats on main (03f6c8e)](results/bm-20250331-3.14.0a6%2B-03f6c8e-JIT/bm-20250331-azure-x86_64-python-03f6c8e239723637811f-3.14.0a6%2B-03f6c8e-pystats.md)
 
 ## linux aarch64 (arminc)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
