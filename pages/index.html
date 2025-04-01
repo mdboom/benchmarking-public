@@ -2,24 +2,175 @@
 <html>
   <head>
     <script src="https://cdn.jsdelivr.net/pyodide/v0.27.4/full/pyodide.js"></script>
+    <style>
+      /* Absolute Center Spinner */
+      .loading {
+        position: fixed;
+        z-index: 999;
+        overflow: show;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+      }
+
+      /* Transparent Overlay */
+      .loading:before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      /* :not(:required) hides these rules from IE9 and below */
+      .loading:not(:required) {
+        /* hide "loading..." text */
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+      }
+
+      .loading:not(:required):after {
+        content: "";
+        display: block;
+        font-size: 10px;
+        width: 50px;
+        height: 50px;
+        margin-top: -0.5em;
+
+        border: 15px solid rgba(33, 150, 243, 1);
+        border-radius: 100%;
+        border-bottom-color: transparent;
+        -webkit-animation: spinner 1s linear 0s infinite;
+        animation: spinner 1s linear 0s infinite;
+      }
+
+      /* Animation */
+
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-o-keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <script type="text/javascript">
       async function main() {
-        let pyodide = await loadPyodide();
-        await pyodide.loadPackage("micropip");
-        await pyodide.loadPackage("numpy");
-        await pyodide.loadPackage("matplotlib");
-        await pyodide.loadPackage(
-          "./bench_runner-1.6.4.dev6+g50e19d0.d20250401-py3-none-any.whl"
-        );
-        await pyodide.loadPackage(
-          "https://files.pythonhosted.org/packages/19/29/ce5d2dcb095debb3bed0654950c45207a7d138e194abef0ded4b86de1dc1/pyperf-2.9.0-py3-none-any.whl"
-        );
+        const ORGANIZATION = "faster-cpython";
+        const REPO = "benchmarking-public";
+        const BRANCH = "main";
+        const REPO_URL = `https://raw.githubusercontent.com/${ORGANIZATION}/${REPO}/refs/heads/${BRANCH}/results/`;
 
-        pyodide.runPythonAsync(await (await fetch("bench_display.py")).text());
+        let params = new URLSearchParams(window.location.search);
+        let base = params.get("base");
+        let head = params.get("head");
+
+        let base_url = `${REPO_URL}${base}`;
+        let head_url = `${REPO_URL}${head}`;
+
+        let [pyodide, base_data, head_data] = await Promise.all([
+          loadPyodide(),
+          fetch(base_url).then((response) => {
+            return response.text();
+          }),
+          fetch(head_url).then((response) => {
+            return response.text();
+          }),
+        ]);
+
+        document.base_url = base_url;
+        document.base_data = base_data;
+        document.head_url = head_url;
+        document.head_data = head_data;
+
+        let result = await Promise.all([
+          fetch("bench_display.py").then((response) => {
+            return response.text();
+          }),
+          pyodide.loadPackage("numpy"),
+          pyodide.loadPackage("matplotlib"),
+          pyodide.loadPackage(
+            "https://files.pythonhosted.org/packages/19/29/ce5d2dcb095debb3bed0654950c45207a7d138e194abef0ded4b86de1dc1/pyperf-2.9.0-py3-none-any.whl"
+          ),
+          pyodide.loadPackage(
+            "./bench_runner-1.6.4.dev6+g50e19d0.d20250401-py3-none-any.whl"
+          ),
+        ]);
+
+        pyodide.runPythonAsync(await result[0]);
       }
       main();
     </script>
+
+    <div class="loading" />
   </body>
 </html>
