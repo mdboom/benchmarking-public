@@ -12,30 +12,32 @@ let gridOptions = null;
 let head_grid = null;
 let base_grid = null;
 
+function toggle_button(e, state) {
+    if (state) {
+        e.classList.remove("btn-outline-primary");
+        e.classList.add("btn-primary");
+    } else {
+        e.classList.remove("btn-primary");
+        e.classList.add("btn-outline-primary");
+    }
+}
+
 function update_buttons() {
-    document.querySelector("#go").disabled = !(
-        python_ready &&
-        head_idx !== null &&
-        base_idx !== null
-    );
+    let ready = (python_ready && head_idx !== null && base_idx !== null);
+    document.querySelector("#go").disabled = !ready;
+    toggle_button(document.querySelector("#go"), ready);
     document.querySelector("#merge_base").disabled = !(
         head_idx !== null &&
         gridOptions !== null &&
         gridOptions._bases[head_idx] !== null
     );
-    document.querySelector("#head_ready").innerHTML =
-        head_idx === null ? "" : "Head";
-    document.querySelector("#base_ready").innerHTML =
-        base_idx === null ? "" : "Base";
+    toggle_button(document.querySelector("#head_ready"), head_idx !== null);
+    toggle_button(document.querySelector("#base_ready"), base_idx !== null);
 }
 
-async function setup_grid() {
-    gridOptions = await fetch("index.json").then((response) => {
-        return response.json();
-    });
-
+function setup_quick_access(bases) {
     let quick_select = document.querySelector("#quick_select");
-    for (base of gridOptions._bases) {
+    for (base of bases) {
         let button = document.createElement("button");
         button.type = "button";
         button.className = "btn btn-outline-primary";
@@ -45,7 +47,7 @@ async function setup_grid() {
             await base_grid.setColumnFilterModel("ref", {
                 filterType: "text",
                 type: "equals",
-                filter: "v" + e.srcElement.innerText,
+                filter: "v" + e.target.innerText,
             });
             await base_grid.onFilterChanged();
         });
@@ -64,16 +66,24 @@ async function setup_grid() {
                 }
             });
         });
+}
+
+async function setup_grid() {
+    gridOptions = await fetch("index.json").then((response) => {
+        return response.json();
+    });
+
+    setup_quick_access(gridOptions._bases);
 
     update_buttons();
 
     gridOptions.columnDefs = [
-        { field: "date", filter: "agDateColumnFilter", width: 150 },
-        { field: "hash", width: 100 },
-        { field: "fork", width: 150 },
-        { field: "ref", width: 150 },
-        { field: "runner", width: 200 },
-        { field: "flags", width: 150 },
+        { field: "date", filter: "agDateColumnFilter" },
+        { field: "hash" },
+        { field: "fork" },
+        { field: "ref" },
+        { field: "runner" },
+        { field: "flags" },
     ];
 
     gridOptions.defaultColDef = {
@@ -86,32 +96,31 @@ async function setup_grid() {
 
     gridOptions.onRowSelected = function (event) {
         let nodes = head_grid.getSelectedNodes();
-        if (nodes.length == 1) {
-            head_idx = nodes[0].sourceRowIndex;
-        } else {
-            head_idx = null;
-        }
+        head_idx = (nodes.length == 1) ? nodes[0].sourceRowIndex : null;
         update_buttons();
     };
+
+    gridOptions.autoSizeStrategy = { type: "SizeColumnsToContentStrategy" };
 
     const head_grid_element = document.querySelector("#head_grid");
     head_grid = agGrid.createGrid(head_grid_element, gridOptions);
 
     gridOptions.onRowSelected = function (event) {
         let nodes = base_grid.getSelectedNodes();
-        if (nodes.length == 1) {
-            base_idx = nodes[0].sourceRowIndex;
-        } else {
-            base_idx = null;
-        }
+        base_idx = (nodes.length == 1) ? nodes[0].sourceRowIndex : null;
         update_buttons();
     };
 
     const base_grid_element = document.querySelector("#base_grid");
     base_grid = agGrid.createGrid(base_grid_element, gridOptions);
+}
 
+async function main() {
     document.querySelector("#go").addEventListener("click", async () => {
-        document.querySelector("#go").innerHTML = "Loading...";
+        let go_button = document.querySelector("#go");
+        go_button.innerHTML = "Loading...";
+        go_button.disabled = true;
+        toggle_button(go_button, false);
         let head_url = REPO_URL + gridOptions._index[head_idx];
         let base_url = REPO_URL + gridOptions._index[base_idx];
         let [head_data, base_data] = await Promise.all([
@@ -125,21 +134,20 @@ async function setup_grid() {
 
         worker.postMessage([base_url, base_data, head_url, head_data]);
     });
-}
 
-async function main() {
     worker = new Worker("worker.js", { type: "module" });
-
     worker.onmessage = (e) => {
         if (e.data == "READY") {
-            console.log("READY");
+            let ready_button = document.querySelector("#ready");
             python_ready = true;
-            document.querySelector("#ready").innerHTML = "Ready";
-            update_buttons();
+            ready_button.innerHTML = "Ready";
+            toggle_button(ready_button, python_ready);
         } else {
-            document.querySelector("#go").innerHTML = "Go";
+            let go_button = document.querySelector("#go");
+            go_button.innerHTML = "Go";
             document.querySelector("#plot").innerHTML = e.data;
         }
+        update_buttons();
     };
 
     await setup_grid();

@@ -39,20 +39,35 @@
         </div>
 
         <div class="p-2">
-          <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li id="ready" class="breadcrumb-item">
-                <div class="spinner-border" role="status" />
-              </li>
-              <li id="head_ready" class="breadcrumb-item"></li>
-              <li id="base_ready" class="breadcrumb-item"></li>
-              <li class="breadcrumb-item">
-                <button type="button" class="btn btn-primary" id="go">
-                  Go
-                </button>
-              </li>
-            </ol>
-          </nav>
+          <div id="quick_select" class="btn-group" role="group">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="ready"
+              disabled
+            >
+              <div class="spinner-border" role="status" />
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="head_ready"
+              disabled
+            >
+              Head
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="base_ready"
+              disabled
+            >
+              Base
+            </button>
+            <button type="button" class="btn btn-outline-primary" id="go">
+              Go
+            </button>
+          </div>
         </div>
 
         <div class="p-2">
