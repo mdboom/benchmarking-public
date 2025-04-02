@@ -118,7 +118,7 @@ async function setup_grid() {
 async function main() {
     document.querySelector("#go").addEventListener("click", async () => {
         let go_button = document.querySelector("#go");
-        go_button.innerHTML = "Loading...";
+        go_button.innerHTML = '<div class="spinner-border spinner-border-sm" role="status"/>';
         go_button.disabled = true;
         toggle_button(go_button, false);
         let head_url = REPO_URL + gridOptions._index[head_idx];
